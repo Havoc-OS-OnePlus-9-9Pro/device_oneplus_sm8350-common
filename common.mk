@@ -462,8 +462,7 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    device/oneplus/common
+    $(LOCAL_PATH)
 
 # Surface Flinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
