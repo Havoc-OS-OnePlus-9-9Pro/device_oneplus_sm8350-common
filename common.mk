@@ -211,6 +211,7 @@ PRODUCT_PACKAGES += \
     ftm_power_config.sh \
     init.class_main.sh \
     init.cust.rc \
+    init.color.rc \
     init.kernel.post_boot.sh \
     init.oem.debug.rc \
     init.oem.rc \
