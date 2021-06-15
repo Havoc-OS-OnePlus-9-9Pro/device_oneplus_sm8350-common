@@ -109,6 +109,11 @@
 /sys/devices/virtual/misc/msm_qcelp/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/misc/msm_wma/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/misc/msm_wmapro/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices(/platform)?/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:sound/Listen.[0-9]+.Audio.Service/wakeup(/.*)?      u:object_r:sysfs_wakeup:s0
+
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pmk8350@0:rtc@6100/rtc/rtc0/hctosys  u:object_r:sysfs_rtc:s0
+
+/sys/devices/platform/soc/1d84000.ufshc/ufstw_lu0(/.*)?                                                              u:object_r:sysfs_oem:s0
 
 # Vibrator
 /sys/devices/platform/soc/88c000.i2c/i2c-10/10-005a/leds/vibrator/level                   u:object_r:sysfs_vibrator:s0

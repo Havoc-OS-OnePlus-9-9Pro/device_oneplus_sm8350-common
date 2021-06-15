@@ -1,0 +1,2 @@
+allow system_server vendor_proc_shs:dir search;
+allow system_server proc_touchpanel:dir search;
