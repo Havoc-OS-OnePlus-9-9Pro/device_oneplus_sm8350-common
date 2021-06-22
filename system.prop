@@ -51,6 +51,9 @@ ro.telephony.default_network=33,33
 persist.vendor.qti.inputopts.enable=true
 persist.vendor.qti.inputopts.movetouchslop=0.6
 
+# Netflix
+ro.netflix.bsp_rev=Q875-32408-1
+
 # Netmgr
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
