@@ -65,10 +65,11 @@ vendor/lib/rfsa/adsp/libworker_pool.so
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
-# ANT+
-system_ext/lib/com.qualcomm.qti.ant@1.0.so
-system_ext/lib64/com.qualcomm.qti.ant@1.0.so
-vendor/lib64/hw/com.dsi.ant@1.0-impl.so
+# ANT+ - from LA.UM.9.14.r1-16900-LAHAINA.0
+system_ext/lib/com.qualcomm.qti.ant@1.0.so|ff22929c0507cef249c34a172d8bb4c1dadbdc88
+system_ext/lib64/com.qualcomm.qti.ant@1.0.so|ab69d97d504acd0d0171d507388524145b32bf8b
+vendor/lib/hw/com.dsi.ant@1.0-impl.so|7985aacab9144eb40b39a3fa7ace429b5fc344b5
+vendor/lib64/hw/com.dsi.ant@1.0-impl.so|a6f313ee471609f35c242550024174bd3ead402d
 
 # Audio libraries
 system_ext/etc/permissions/audiosphere.xml
@@ -89,32 +90,43 @@ vendor/lib/libaudcal.so
 vendor/lib/libqtigef.so
 vendor/lib64/libadsprpc.so
 
-# Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/libbtnv.so
-vendor/lib64/libsoc_helper.so
+# Bluetooth - from LA.UM.9.14.r1-16900-LAHAINA.0
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|d6dc2016e466fa1af75fdf87687cb7d0da4b6922
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|081ecf947750f690c0a53e27c67bea4ecdbb3016
+vendor/lib64/libbtnv.so|bf85b8cf3fdbe25604de21e9b870afbf78579a46
+vendor/lib64/libsoc_helper.so|1a76b2e9151c6bf3a0576999b4ca9fa2e65da6ed
+vendor/lib64/libsoc_helper_jni.so|e58ddb6b27e4d7fd215adbbd05165f1dccdd0f05
 
-# Bluetooth (A2DP)
-vendor/lib/hw/audio.bluetooth_qti.default.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib/btaudio_offload_if.so
-vendor/lib/libbluetooth_audio_session_qti.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib64/hw/audio.bluetooth_qti.default.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/btaudio_offload_if.so
-vendor/lib64/libbluetooth_audio_session_qti.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
+# Bluetooth (A2DP) - from LA.UM.9.14.r1-16900-LAHAINA.0
+vendor/lib/hw/audio.bluetooth_qti.default.so|9a2af231ce14fb2cc547ecbe9477ba1d03da3b1f
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|28442540f01ed098db806751083f8e0186f1c36f
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|c9d799a57b7ec112197146845d430b7d57073b93
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|2443909c9c1489a254a45bc47ca41dd5b935d08f
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|4279398476187e4eaee25b17cc724bd300f79ce5
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|26924b6fcfa37beaf7a3cea26a088fef3dc78265
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|5f2de784f17fa29262de0c7cfd1dadd4a5d55131
+vendor/lib/btaudio_offload_if.so|bca2ea74d3c3f2915ec56c789c92f8d7944ffc6d
+vendor/lib/libbluetooth_audio_session_qti.so|7f70a599f7e265197d6f427bc3ede6f904fd581d
+vendor/lib/libbluetooth_audio_session_qti_2_1.so|5c1640c22a3eaad350c8c991a8af3220b585748b
+vendor/lib/libbt-hidlclient.so|d908e85fd11cd795b017c1f145eabda51637783b
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|e0c3bba159921cf37c544125c655356a25eebf5d
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so|f807d291d5056b70c1b158239f6b6d312bb8b8d8
+vendor/lib/vendor.qti.hardware.fm@1.0.so|ac759b58e79e9354dc55f3c4010fde4e691c4f20
+vendor/lib64/hw/audio.bluetooth_qti.default.so|17159f95d23c9a3ebc34b562f4bb25cb250168e7
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|c629c9fcddea7072e05790972ee10477cc180b05
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|e6e32d2450602c203f75ef8e17b3f6e0f2bd8f4d
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|7003836405234b336a8bbc389636c6c1993ef57d
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|342f9aad6e6d3ee068bd9ab5f8cb3eec95511a1d
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|b4c3a295957f5e5bf22bb12b97f74e813909fe10
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|d00290f12780e0ab880f052676ec4b21c7f1b355
+vendor/lib64/btaudio_offload_if.so|de7ffc038e9753e85f8d4065511496829bf586da
+vendor/lib64/libbluetooth_audio_session_qti.so|b8157e898bab1c778550f603d0950d3a233e5610
+vendor/lib64/libbluetooth_audio_session_qti_2_1.so|d4952c78741ac3ef6da7bdd137d000bd607e90ac
+vendor/lib64/libbt-hidlclient.so|c88ccca98fc5c1e18334c1a4c97d5931c40e508e
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|d28d86ee5a290a31f38ac141a2b9485e9ef06e4e
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|9ad4486873a656cc341dc34f728d57b6a59b36c4
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|ee11be18738a1ce8752eca2e66b70cbe728e47cc
 
 # Bluetooth (aptX) - from crosshatch - RQ1A.201205.003
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
@@ -408,11 +420,11 @@ vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 
-# Configstore
-vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
-vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
+# Configstore - from LA.UM.9.14.r1-16900-LAHAINA.0
+vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|1dcc47f5621b535e6c57383d8f96c28a30497d9d
+vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
+vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|29c9f5b97bd6495765171de5e9c58d0e7f91fb03
+vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|944814891e5e87110c81f1a5a2b8e958f1d66fa7
 
 # CVP
 vendor/etc/cvp/v2.0/facedetection/model1.dat
@@ -578,47 +590,47 @@ vendor/lib64/vendor.qti.esepowermanager@1.1.so
 vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc
 
-# Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+# Gatekeeper - from LA.UM.9.14.r1-16900-LAHAINA.0
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|a9984e7e1dca2883f615966bea45336456d5283f
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|3744a48338109526b12f110890504022e58ae52d
 
-# Graphics (Adreno)
--vendor/app/com.qualcomm.qti.gpudrivers.lahaina.api30/com.qualcomm.qti.gpudrivers.lahaina.api30.apk;PRESIGNED
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/libC2D2.so
-vendor/lib/libCB.so
-vendor/lib/libOpenCL.so
-vendor/lib/libVkLayer_q3dtools.so
-vendor/lib/libadreno_app_profiles.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libc2d30_bltlib.so
-vendor/lib/libgpudataproducer.so
-vendor/lib/libgsl.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/libC2D2.so
-vendor/lib64/libCB.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libVkLayer_q3dtools.so
-vendor/lib64/libadreno_app_profiles.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libgpudataproducer.so
-vendor/lib64/libgsl.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
+# Graphics (Adreno) - from LA.UM.9.14.r1-16900-LAHAINA.0
+-vendor/app/com.qualcomm.qti.gpudrivers.lahaina.api30/com.qualcomm.qti.gpudrivers.lahaina.api30.apk;PRESIGNED|57f68fb3484aa59376dc29adc7aa8824c2f4edf3
+vendor/lib/egl/eglSubDriverAndroid.so|f54f1f5b09ebe164610dff2ff79b0a510d9fbc7d
+vendor/lib/egl/libEGL_adreno.so|b648bf2510a74c9e3f3e90ccd59583ac4f4557ff
+vendor/lib/egl/libGLESv1_CM_adreno.so|2ed252a7049e934d832f01413a6eb83dca51a1c8
+vendor/lib/egl/libGLESv2_adreno.so|dc796c3bd2e58f17b6120a9cec88aa7631e81132
+vendor/lib/egl/libq3dtools_adreno.so|61eed4e6e6754130a10526d157f4d06db7886d6d
+vendor/lib/egl/libq3dtools_esx.so|35105c62a6cfb217f1c65eccac64da0269a7fa64
+vendor/lib/libC2D2.so|56e216061023c0de1c1e12d5a17afb265774f70b
+vendor/lib/libCB.so|ec33a8f67b1e144b4559ad4f25ec85f417dac944
+vendor/lib/libOpenCL.so|312fd22f935a9cab763769a8fc7a8435ae1d1e2f
+vendor/lib/libVkLayer_q3dtools.so|c52781e8f95550cfafb20b59a72a22f3874fb918
+vendor/lib/libadreno_app_profiles.so|b51f9b9b0b7fe06f89460e0a0edc553946e05f33
+vendor/lib/libadreno_utils.so|860a7f6537789ad8a9b77f663b833eadda623b90
+vendor/lib/libc2d30_bltlib.so|117f775a4a61647b3628d9cfd64a05bef0646a14
+vendor/lib/libgpudataproducer.so|408e51a87f16b08c8e48c58386ce4ea968588bcd
+vendor/lib/libgsl.so|0abb741f9f9d8d46a6469d37ae9e3e5e3776d3ac
+vendor/lib/libllvm-glnext.so|f5b127ef314f2c2e8d0cf0eba701b95441f2a6dc
+vendor/lib/libllvm-qcom.so|48a1a8be75ea096e5bfa7d8fb71459c0b18755cc
+vendor/lib64/egl/eglSubDriverAndroid.so|89d44cb02c3cd8e042aa2ef32b16fac37f260d6f
+vendor/lib64/egl/libEGL_adreno.so|985028da10f1ceb5dea59f83681e5765e552d1b4
+vendor/lib64/egl/libGLESv1_CM_adreno.so|8ab392439524b532ea8560ceea8e9f99b40eae37
+vendor/lib64/egl/libGLESv2_adreno.so|064270899bd662cc37729340a50438147cfdf646
+vendor/lib64/egl/libq3dtools_adreno.so|54102dad591413ab03ec077b286b5a55ab33a235
+vendor/lib64/egl/libq3dtools_esx.so|74099f961d7443f6684fe3ee300d9ac83849f571
+vendor/lib64/libC2D2.so|924e3a24c1dea34e980410de2059379967696a55
+vendor/lib64/libCB.so|ff81cf5ba68ada8baeee4c7bbe0529734d032c5c
+vendor/lib64/libOpenCL.so|504d75263d6443c9f5e8d122fb1f96c3f1521b66
+vendor/lib64/libVkLayer_q3dtools.so|6076429b0e0dad90829e69b96cc2848785555a8a
+vendor/lib64/libadreno_app_profiles.so|664b007f497d1720ca76640e678df0099eb51569
+vendor/lib64/libadreno_utils.so|f467f3f34880d850c81f323ffbc60d18369e28cc
+vendor/lib64/libc2d30_bltlib.so|3732f8338eef96657c3c080e33fe484c7a184109
+vendor/lib64/libgpudataproducer.so|0a67898c620057e29496104ac28278160cdeeca0
+vendor/lib64/libgsl.so|349c81dac5627ca947a7285fc90cda0a9d8cff7c
+vendor/lib64/libllvm-glnext.so|dc6ca74a9a3f1ef0fc90ceda90a53ff769c06241
+vendor/lib64/libllvm-qcom.so|82ee88a3cbbdb21deb7ffcf6ea96f2c75534a29a
 
 # Graphics (Adreno firmware)
 vendor/firmware/a660_gmu.bin
@@ -629,9 +641,9 @@ vendor/firmware/a660_zap.b02
 vendor/firmware/a660_zap.elf
 vendor/firmware/a660_zap.mdt
 
-# Graphics (Vulkan)
-vendor/lib/hw/vulkan.adreno.so
-vendor/lib64/hw/vulkan.adreno.so
+# Graphics (Vulkan) - from LA.UM.9.14.r1-16900-LAHAINA.0
+vendor/lib/hw/vulkan.adreno.so|edff94ca9799b2337746f5742f2fcd8f404a8f23
+vendor/lib64/hw/vulkan.adreno.so|63aad1764600bcf1105a516ca6eddf333ed378c4
 
 # GNSS
 -vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
@@ -789,17 +801,17 @@ vendor/lib64/vendor.pixelworks.hardware.display@1.0.so
 vendor/lib64/vendor.pixelworks.hardware.display@1.1.so
 vendor/lib64/vendor.pixelworks.hardware.feature@1.0.so
 
-# IRQ balance
-vendor/bin/msm_irqbalance
-vendor/etc/msm_irqbalance.conf
+# IRQ balance - from LA.UM.9.14.r1-16900-LAHAINA.0
+vendor/bin/msm_irqbalance|f16cd993154581baaf60d4a1f2d9f8b0a5ee1f82
+vendor/etc/msm_irqbalance.conf|39d0d339b3551e44258360abdb6e55e047983485
 
-# Keymaster
-vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
-vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so
-vendor/lib64/libqtikeymaster4.so
+# Keymaster - from LA.UM.9.14.r1-16900-LAHAINA.0
+vendor/bin/hw/android.hardware.keymaster@4.1-service-qti|86282e2e8e59b15723b0890e722dba272f21e09d
+vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc|f6907552961ba772c1ad5b493913a60d65abedb4
+vendor/lib64/libkeymasterdeviceutils.so|08e1b6384918c3ce6ddcad2036f3efb038081737
+vendor/lib64/libkeymasterprovision.so|d770e65a205729666c2ff2b18f64475b1b6685bc
+vendor/lib64/libkeymasterutils.so|697b63e53cd30ecf67e29e019889784bd1d990db
+vendor/lib64/libqtikeymaster4.so|9dcbe577c5dcb6f84143d7f4bb5de2a668e186dc
 
 # Listen
 vendor/lib/libadpcmdec.so
@@ -907,57 +919,57 @@ vendor/lib64/libOmxWmaDec.so
 vendor/bin/opf-service
 vendor/etc/init/init.opf.rc
 
-# Peripheral manager
-vendor/bin/pm-proxy
-vendor/bin/pm-service
-vendor/lib64/libperipheral_client.so
-vendor/lib64/libspcom.so
+# Peripheral manager - from LA.UM.9.14.r1-16900-LAHAINA.0
+vendor/bin/pm-proxy|f8facebb49d5c46ffd0036c31f60ad188ded4cc4
+vendor/bin/pm-service|8a7615c3bdca02ab45da44320c68b85d8da6c3b2
+vendor/lib64/libperipheral_client.so|cb7d5613a4e0afb8395fe7f139480e615c5f6da2
+vendor/lib64/libspcom.so|c007c29f3ce9d27f89b8e966f6e9b852104259e3
 
-# Perf
-vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
-vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/etc/powerhint.xml
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
-vendor/lib/libperfioctl.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
-vendor/lib/libqti-utils.so
-vendor/lib64/liblearningmodule.so
-vendor/lib64/libmeters.so
-vendor/lib64/libperfconfig.so
-vendor/lib64/libperfgluelayer.so
-vendor/lib64/libperfioctl.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util.so
-vendor/lib64/libqti-utils.so
+# Perf - from LA.UM.9.14.r1-16900-LAHAINA.0
+vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|ccaa4a444187fb6b8c3f3927b4be7b4ec61ba038
+vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
+vendor/etc/perf/commonresourceconfigs.xml|c80efdafc6c5ef4fe0602f4ffe3137092513db38
+vendor/etc/perf/perfboostsconfig.xml|8086f0583a4433f0d445f12e16a6d4402d872167
+vendor/etc/perf/perfconfigstore.xml|ca2e87780d86eb808f2322b79c8c475ba5f618e2
+vendor/etc/perf/targetconfig.xml|33128deb6c62a8cecf491c6c0c13d18e811cfe81
+vendor/etc/perf/targetresourceconfigs.xml|6447c05b552dbea7492b6cf28082a8d33996ec0a
+vendor/etc/powerhint.xml|63b34c05bec864c19e15ed63d1f7b3936a29b443
+vendor/lib/libperfconfig.so|00564e80056d21e90dd79f0c501801471ed3d0fa
+vendor/lib/libperfgluelayer.so|25595294baa5c58c9d05b91a08009fcb364d2c16
+vendor/lib/libperfioctl.so|db461c520907cb19496d99b9fbeec3710d6114ab
+vendor/lib/libqti-perfd-client.so|ddb623a0088dcddbb6273ab7eeacf061728e7d99
+vendor/lib/libqti-perfd.so|784dfc7bc5eb1605f140bb4c8071de68aa0f94c9
+vendor/lib/libqti-util.so|b379e8dbe99e4983bbc32d0068de1e72250d7525
+vendor/lib/libqti-utils.so|ded1058c3c4bc793cd5a153c69dc6521bd64125f
+vendor/lib64/liblearningmodule.so|fe62289d659e6b767f1e81a0a1edad417c17ea83
+vendor/lib64/libmeters.so|57a5e7de0f9d5a844fec1f78cea23527ec38b28c
+vendor/lib64/libperfconfig.so|baaf8507d908d1108ed5a697a883d77c3ca77607
+vendor/lib64/libperfgluelayer.so|e82c3f5191f768c2f3088c966f3d67188733bbf3
+vendor/lib64/libperfioctl.so|a25307077ea6fe02c91cc200e47e0cea5c253b6d
+vendor/lib64/libqti-perfd-client.so|e8ac2aa02a7a2c122da9171cc63301d41d625f2e
+vendor/lib64/libqti-perfd.so|3a70e01aee611f9985e784c4c0b0f4b8b672c261
+vendor/lib64/libqti-util.so|0f42505a814784564362ecf4bf9aa4e5f834a9c8
+vendor/lib64/libqti-utils.so|b7746d7660a0ce4e4b7697426cc6b3f1c4149f7e
 
-# Perf LM
-vendor/etc/lm/prekill/prekill_2GB.data
-vendor/etc/lm/prekill/prekill_4GB.data
-vendor/etc/lm/prekill/prekill_6GB.data
-vendor/etc/lm/AdaptLaunchFeature.xml
-vendor/etc/lm/AppClassifierFeature.xml
-vendor/etc/lm/GameOptimizationFeature.xml
-vendor/etc/lm/PreKillFeature.xml
-vendor/etc/lm/gPLAFFeature.xml
-vendor/etc/lm/sPLHFeature.xml
-vendor/lib64/libadaptlaunch.so
-vendor/lib64/libappclassifier.so
-vendor/lib64/libgameoptfeature.so
-vendor/lib64/libgplaf.so
-vendor/lib64/liblmutils-ns.so
-vendor/lib64/libmemperfd.so
-vendor/lib64/libmeters-ns.so
-vendor/lib64/libprekill.so
-vendor/lib64/libsplh.so
+# Perf LM - from LA.UM.9.14.r1-16900-LAHAINA.0
+vendor/etc/lm/prekill/prekill_2GB.data|c731aed560f7a8f0ac077ec989cc9c6e106e4cc5
+vendor/etc/lm/prekill/prekill_4GB.data|d44007e12419b7e433ab26d3534d104fa4a88b72
+vendor/etc/lm/prekill/prekill_6GB.data|dbf72257628f2da4979726b046377673cb33d6e8
+vendor/etc/lm/AdaptLaunchFeature.xml|183a1233b62ded8d93a5d0a015df722c904f371b
+vendor/etc/lm/AppClassifierFeature.xml|9bb1a5d80b1f39913a288a6607100eab0f104b74
+vendor/etc/lm/GameOptimizationFeature.xml|1b379c1af51d9fdad7781c32e6e589f4db090b77
+vendor/etc/lm/PreKillFeature.xml|6e6e7bc843c3632e8ddedf6299bd9f7d2e0878ef
+vendor/etc/lm/gPLAFFeature.xml|344f486ca9f812a4d92b29d1f80dbe52471481f3
+vendor/etc/lm/sPLHFeature.xml|08d19795671d4f8abfab55e4bf4f2c2a2d3e2374
+vendor/lib64/libadaptlaunch.so|8ec9686f9a158f546f4f6bacb9eaa518e39a1b3d
+vendor/lib64/libappclassifier.so|872918183aa06fb0ece03a076d3305f07fc9be10
+vendor/lib64/libgameoptfeature.so|5459c7e0e68bed993b7dfd44cd8b715fbc437901
+vendor/lib64/libgplaf.so|35e14f070f01dd0d6fc2327f46cd3183392343b5
+vendor/lib64/liblmutils-ns.so|1700befd702b9ead8610e4847513671406d61cc9
+vendor/lib64/libmemperfd.so|a031d86e247f984a634e50d8312a8f595b1ec8af
+vendor/lib64/libmeters-ns.so|0550ccb4ea70b078b5c67b6979f06969eba7a2f9
+vendor/lib64/libprekill.so|da5b05cc1608cdc51585dda92ac167ec01f1b50d
+vendor/lib64/libsplh.so|484b9027a6eb2d7302dee78c2d222df0300ef3ce
 
 # Power-off alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk|b0e06d00af3ecf65284788169a5333c2f56a1823
@@ -1172,40 +1184,40 @@ vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
-# Snapdragon Computer Vision Engine
--vendor/lib/libfastcvopt.so
--vendor/lib64/libfastcvopt.so
-vendor/lib/libfastcvdsp_stub.so
-vendor/lib/libscveCommon.so
-vendor/lib/libscveCommon_stub.so
-vendor/lib/libscveObjectSegmentation.so
-vendor/lib/libscveObjectSegmentation_stub.so
-vendor/lib/libscveObjectTracker.so
-vendor/lib/libscveObjectTracker_stub.so
-vendor/lib64/libfastcvdsp_stub.so
-vendor/lib64/libscveCommon.so
-vendor/lib64/libscveCommon_stub.so
-vendor/lib64/libscveObjectSegmentation.so
-vendor/lib64/libscveObjectSegmentation_stub.so
-vendor/lib64/libscveObjectTracker.so
-vendor/lib64/libscveObjectTracker_stub.so
+# Snapdragon Computer Vision Engine - from LA.UM.9.14.r1-16900-LAHAINA.0
+-vendor/lib/libfastcvopt.so|40333b22cdf93d4ad3c85fd821298bc2826b6d2e
+-vendor/lib64/libfastcvopt.so|deb465c645056e0dd4337ae30388c9f72b2cba8c
+vendor/lib/libfastcvdsp_stub.so|68ecf8668a52a2493133b7c472d9c3ccada2f0c1
+vendor/lib/libscveCommon.so|48537df6471d80a82d15e9653715ec8397089a20
+vendor/lib/libscveCommon_stub.so|07b2be64128e0d3df15679e55800d04126f4e5ab
+vendor/lib/libscveObjectSegmentation.so|f153a8e15b24c94d79796db047cda9713941bbc5
+vendor/lib/libscveObjectSegmentation_stub.so|3dfc098684e7a3e99277af06f8c0c31690558151
+vendor/lib/libscveObjectTracker.so|9fafc0fa2df58a0b3eb0b779061953b3bfcba36a
+vendor/lib/libscveObjectTracker_stub.so|cea8d54af7ab3083919601d1dca69f483962cf1f
+vendor/lib64/libfastcvdsp_stub.so|e96f694ccc539aedbfcd11abeab272e22a0d78d7
+vendor/lib64/libscveCommon.so|6adf58a1b21c3ffad3018708d351b88709665527
+vendor/lib64/libscveCommon_stub.so|74975235168e732d5ed7ba81f180c64b8536daf7
+vendor/lib64/libscveObjectSegmentation.so|0f25100bd68908e30a8b92bc3f2332fbb0bca940
+vendor/lib64/libscveObjectSegmentation_stub.so|94d7bd952b78590777664c458b5680d7e9ec03e9
+vendor/lib64/libscveObjectTracker.so|858e7c21306b96ae73c60a6a30bd1d7252698334
+vendor/lib64/libscveObjectTracker_stub.so|1a9bd587a432b0b8950a2ed012257b00fd7e89eb
 
-# Soter
-vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
-vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.soter@1.0.so
+# Soter - from LA.UM.9.14.r1-16900-LAHAINA.0
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|89ff6b0bb10110c5ab91ab089d540095368ff645
+vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|ca9d2f2cf5b1dd49bdcee560e790c53e317b102a
+vendor/lib64/vendor.qti.hardware.soter@1.0.so|6efb090e13dc7d68cc3258b5445872074d240512
 
 # Thermal engine
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
 vendor/bin/thermal-engine
 
-# Time services
--vendor/app/TimeService/TimeService.apk
-vendor/bin/time_daemon
-vendor/etc/init/init.time_daemon.rc
-vendor/lib64/libtime_genoff.so
+# Time services - from LA.UM.9.14.r1-16900-LAHAINA.0
+-vendor/app/TimeService/TimeService.apk|8c532fc3919b5b4005a8519e904f9857a98967ba
+vendor/bin/time_daemon|701169a7d2874d0cea357b23c62b9464d7fb94e9
+vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
+vendor/lib64/libtime_genoff.so|e25197032317e73afdb80d97ee9dd6b46f755fd2
 
 # Touchscreen firmware
 vendor/firmware/tp/FW_19811_SY761.bin
@@ -1232,10 +1244,10 @@ vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
-# Trusted User Interface
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
+# Trusted User Interface - from LA.UM.9.14.r1-16900-LAHAINA.0
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|251475f5abd62976b2f148fa3803e0970746b75e
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|f4349671021e978f59135e9b1b0bfaa2ff9a549a
 
 # Vibrator HAL
 vendor/lib/hw/vibrator.default.so
